@@ -1,0 +1,5 @@
+.env
+workspace/
+backup*/
+results*/
+__pycache__/
