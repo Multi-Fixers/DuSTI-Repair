@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/java/org/apache/commons/lang/time/StopWatch.java", "buggy_line numbers": [118], "fix_type": "insert", "fix": ["if(this.runningState == STATE_RUNNING)"], "developer_fix": ["if(this.runningState == STATE_RUNNING) {"]}], "iter_path": "Iteration 1 with loc 1/2. ", "time_cost": 81.48363184928894}

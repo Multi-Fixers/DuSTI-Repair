@@ -1,0 +1,33 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/rhino/jstype/NamedType.java",
+            "buggy_line numbers": [
+                190
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (detectInheritanceCycle()) {"
+            ],
+            "developer_fix": [
+                "tokens.add(token);",
+                "break;"
+            ]
+        },
+        {
+            "file_path": "src/com/google/javascript/rhino/jstype/NamedType.java",
+            "buggy_line numbers": [
+                202
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (detectInheritanceCycle()) {"
+            ],
+            "developer_fix": [
+                "if (detectInheritanceCycle()) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 58.33212345562445
+}

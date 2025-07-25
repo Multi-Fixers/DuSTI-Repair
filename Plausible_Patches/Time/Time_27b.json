@@ -1,0 +1,34 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/joda/time/format/PeriodFormatterBuilder.java",
+            "buggy_line numbers": [
+                801
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "boolean noParser = sep.iAfterParser == null;",
+                "boolean noPrinter = sep.iAfterPrinter == null;",
+                "if (noParser && noPrinter) {"
+            ],
+            "developer_fix": [
+                "if (sep.iAfterParser == null && sep.iAfterPrinter == null) {"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/joda/time/format/PeriodFormatterBuilder.java",
+            "buggy_line numbers": [
+                548
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "}"
+            ],
+            "developer_fix": [
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 64.8147841578923
+}

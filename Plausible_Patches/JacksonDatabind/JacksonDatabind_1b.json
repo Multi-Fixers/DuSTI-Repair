@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/com/fasterxml/jackson/databind/ser/BeanPropertyWriter.java", "buggy_line numbers": [592], "fix_type": "insert", "fix": ["return;"], "developer_fix": ["return;"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 124.23497772216797}

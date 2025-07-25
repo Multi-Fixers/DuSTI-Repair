@@ -1,0 +1,20 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java",
+            "buggy_line numbers": [
+                133,
+                134,
+                135,
+                136
+            ],
+            "fix_type": "delete",
+            "fix": [
+                ""
+            ],
+            "developer_fix": []
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 61.88848900794983
+}

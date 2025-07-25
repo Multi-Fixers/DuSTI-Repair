@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/jsoup/safety/Cleaner.java", "buggy_line numbers": [43], "fix_type": "insert", "fix": ["if (dirtyDocument.body() != null)"], "developer_fix": ["if (dirtyDocument.body() != null) // frameset documents won't have a body. the clean doc will have empty body."]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 18.675434827804565}

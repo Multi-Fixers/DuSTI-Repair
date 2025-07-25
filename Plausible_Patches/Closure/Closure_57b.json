@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/ClosureCodingConvention.java",
+            "buggy_line numbers": [
+                197
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (target != null && target.getType() == Token.STRING) {"
+            ],
+            "developer_fix": [
+                "if (target != null && target.getType() == Token.STRING) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. Iteration 2 with loc 1/1. ",
+    "time_cost": 394.8015263080597
+}

@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/CodeGenerator.java",
+            "buggy_line numbers": [
+                285
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "Context rhsContext = getContextForNoInOperator(context);"
+            ],
+            "developer_fix": [
+                "Context rhsContext = getContextForNoInOperator(context);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 36.89933399823753
+}

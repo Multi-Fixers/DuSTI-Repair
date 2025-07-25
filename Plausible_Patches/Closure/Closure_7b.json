@@ -1,0 +1,49 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java",
+            "buggy_line numbers": [
+                613
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (resultEqualsValue) {"
+            ],
+            "developer_fix": [
+                "if (resultEqualsValue) {"
+            ]
+        },
+        {
+            "file_path": "src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java",
+            "buggy_line numbers": [
+                615
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "return ctorType.getGreatestSubtype(type);",
+                "} else {"
+            ],
+            "developer_fix": [
+                "return ctorType.getGreatestSubtype(type);",
+                "} else {"
+            ]
+        },
+        {
+            "file_path": "src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java",
+            "buggy_line numbers": [
+                616
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "return type.isSubtype(ctorType) ? null : type;",
+                "}"
+            ],
+            "developer_fix": [
+                "return type.isSubtype(ctorType) ? null : type;",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/3. Iteration 2 with loc 2/3. Iteration 3 with loc 3/3. ",
+    "time_cost": 1029.181141179439
+}

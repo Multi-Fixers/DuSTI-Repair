@@ -1,0 +1,32 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/math/linear/BigMatrixImpl.java",
+            "buggy_line numbers": [
+                991
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "final BigDecimal[] out = new BigDecimal[nRows];"
+            ],
+            "developer_fix": [
+                "final BigDecimal[] out = new BigDecimal[nRows];"
+            ]
+        },
+        {
+            "file_path": "src/java/org/apache/commons/math/linear/BigMatrixImpl.java",
+            "buggy_line numbers": [
+                779
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "final double[] out = new double[nRows];"
+            ],
+            "developer_fix": [
+                "final double[] out = new double[nRows];"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 77.990078342452
+}

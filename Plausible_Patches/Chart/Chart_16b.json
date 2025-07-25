@@ -1,0 +1,35 @@
+{
+    "patch": [
+        {
+            "file_path": "source/org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "buggy_line numbers": [
+                207,
+                208
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "this.seriesKeys = new Comparable[0];",
+                "this.categoryKeys = new Comparable[0];"
+            ],
+            "developer_fix": [
+                "this.seriesKeys = new Comparable[0];",
+                "this.categoryKeys = new Comparable[0];"
+            ]
+        },
+        {
+            "file_path": "source/org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "buggy_line numbers": [
+                338
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (categoryKeys.length != this.startData[0].length) {"
+            ],
+            "developer_fix": [
+                "if (Integer.compare(categoryKeys.length, this.startData[0].length) != 0) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 83.2133781301044
+}

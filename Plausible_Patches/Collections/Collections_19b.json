@@ -1,0 +1,21 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/collections/list/SetUniqueList.java",
+            "buggy_line numbers": [
+                236,
+                237
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "set.remove(removed);",
+                "set.add(object);"
+            ],
+            "developer_fix": [
+                ""
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 2/2. ",
+    "time_cost": 110.59594821929932
+}

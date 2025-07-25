@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/com/google/javascript/jscomp/FunctionInjector.java", "buggy_line numbers": [730, 731, 732], "fix_type": "delete", "fix": [""], "developer_fix": []}], "iter_path": "Iteration 1 with loc 2/2. ", "time_cost": 299.5538628101349}

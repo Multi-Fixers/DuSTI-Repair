@@ -1,0 +1,30 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java",
+            "buggy_line numbers": [
+                126
+            ],
+            "fix_type": "delete",
+            "fix": [
+                ""
+            ],
+            "developer_fix": []
+        },
+        {
+            "file_path": "src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java",
+            "buggy_line numbers": [
+                128
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "traverse(c);"
+            ],
+            "developer_fix": [
+                "traverse(c);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/2. Iteration 2 with loc 2/2. ",
+    "time_cost": 796.527238368988
+}

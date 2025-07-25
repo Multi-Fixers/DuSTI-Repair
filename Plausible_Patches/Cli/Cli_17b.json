@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/cli/PosixParser.java",
+            "buggy_line numbers": [
+                303
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "return;"
+            ],
+            "developer_fix": [
+                "break;"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 13.194647073745728
+}

@@ -1,0 +1,20 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/jxpath/ri/model/beans/PropertyPointer.java",
+            "buggy_line numbers": [
+                152
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return getBaseValue() == null ? 1 : ValueUtils.getLength(getBaseValue());"
+            ],
+            "developer_fix": [
+                "Object baseValue = getBaseValue();",
+                "return baseValue == null ? 1 : ValueUtils.getLength(baseValue);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 35.185419987141
+}

@@ -1,0 +1,32 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/cli/Option.java",
+            "buggy_line numbers": [
+                72
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "private Class type = String.class;"
+            ],
+            "developer_fix": [
+                "private Class type = String.class;"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+            "buggy_line numbers": [
+                84
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "type = String.class;"
+            ],
+            "developer_fix": [
+                "type = String.class;"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/2. Iteration 2 with loc 2/2. ",
+    "time_cost": 148.10119110233312
+}

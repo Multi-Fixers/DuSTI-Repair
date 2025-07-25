@@ -1,0 +1,23 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/com/fasterxml/jackson/databind/deser/std/MapDeserializer.java",
+            "buggy_line numbers": [
+                303
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return (_valueDeserializer == null)",
+                "&& (_keyDeserializer == null)",
+                "&& (_valueTypeDeserializer == null)"
+            ],
+            "developer_fix": [
+                "return (_valueDeserializer == null)",
+                "&& (_keyDeserializer == null)",
+                "&& (_valueTypeDeserializer == null)"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 145.58307433128357
+}

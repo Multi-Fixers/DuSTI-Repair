@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/jsoup/nodes/Attributes.java", "buggy_line numbers": [125], "fix_type": "replace", "fix": ["{", "it.remove();", "break;", "}"], "developer_fix": ["it.remove();"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 27.558660984039307}

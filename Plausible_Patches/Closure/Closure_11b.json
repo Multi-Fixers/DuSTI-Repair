@@ -1,0 +1,18 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/TypeCheck.java",
+            "buggy_line numbers": [
+                1314,
+                1315
+            ],
+            "fix_type": "delete",
+            "fix": [
+                ""
+            ],
+            "developer_fix": []
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 237.6326174736023
+}

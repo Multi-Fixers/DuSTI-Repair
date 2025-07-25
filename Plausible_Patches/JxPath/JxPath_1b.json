@@ -1,0 +1,34 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java",
+            "buggy_line numbers": [
+                116
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return nodeType == Node.ELEMENT_NODE",
+                "|| nodeType == Node.DOCUMENT_NODE;"
+            ],
+            "developer_fix": [
+                "return nodeType == Node.ELEMENT_NODE",
+                "|| nodeType == Node.DOCUMENT_NODE;"
+            ]
+        },
+        {
+            "file_path": "src/java/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java",
+            "buggy_line numbers": [
+                376
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return true;"
+            ],
+            "developer_fix": [
+                "return (node instanceof Element) || (node instanceof Document);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 61.13068985939026
+}

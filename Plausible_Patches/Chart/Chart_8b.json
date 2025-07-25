@@ -1,0 +1,20 @@
+{
+    "patch": [
+        {
+            "file_path": "source/org/jfree/data/time/Week.java",
+            "buggy_line numbers": [
+                175
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "Locale defaultLocale = Locale.getDefault();",
+                "this(time, zone, defaultLocale);"
+            ],
+            "developer_fix": [
+                "this(time, zone, Locale.getDefault());"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 45.100294237858
+}

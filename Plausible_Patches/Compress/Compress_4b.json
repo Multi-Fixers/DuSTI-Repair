@@ -1,0 +1,17 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java",
+            "buggy_line numbers": [
+                530
+            ],
+            "fix_type": "delete",
+            "fix": [
+                ""
+            ],
+            "developer_fix": []
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 3/4. ",
+    "time_cost": 44.56124401092529
+}

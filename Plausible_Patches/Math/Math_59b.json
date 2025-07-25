@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/math/util/FastMath.java",
+            "buggy_line numbers": [
+                3482
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return Math.max(a,b);"
+            ],
+            "developer_fix": [
+                "return (a <= b) ? b : (Float.isNaN(a + b) ? Float.NaN : a);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 370.42047452926636
+}

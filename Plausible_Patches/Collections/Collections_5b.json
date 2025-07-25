@@ -1,0 +1,25 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/collections/list/SetUniqueList.java",
+            "buggy_line numbers": [
+                195
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "final Object o = it.next();",
+                "if (set.contains(o) == false) {",
+                "super.add(index, o);",
+                "set.add(o);",
+                "index++;",
+                "}"
+            ],
+            "developer_fix": [
+                "int sizeBeforeAddNext = size();",
+                "add(index, it.next());"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/2. ",
+    "time_cost": 44.414159059524536
+}

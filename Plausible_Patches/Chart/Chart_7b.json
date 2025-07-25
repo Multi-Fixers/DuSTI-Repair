@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "source/org/jfree/data/time/TimePeriodValues.java",
+            "buggy_line numbers": [
+                302
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "long e = getDataItem(this.maxMiddleIndex).getPeriod().getEnd()"
+            ],
+            "developer_fix": [
+                "long e = getDataItem(this.maxMiddleIndex).getPeriod().getEnd()"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 2/2. ",
+    "time_cost": 71.079345703125
+}

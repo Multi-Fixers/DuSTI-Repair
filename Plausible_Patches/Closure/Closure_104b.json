@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/rhino/jstype/UnionType.java",
+            "buggy_line numbers": [
+                291
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (Boolean.FALSE.equals(result.isNoType())) {"
+            ],
+            "developer_fix": [
+                "if (!result.isNoType()) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 44.44434567829132
+}

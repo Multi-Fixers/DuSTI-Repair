@@ -1,0 +1,71 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/com/google/gson/internal/bind/JsonTreeWriter.java",
+            "buggy_line numbers": [
+                162
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "@Override public JsonWriter value(Boolean value) throws IOException {",
+                "if (value == null) {",
+                "return nullValue();",
+                "}",
+                "put(new JsonPrimitive(value));",
+                "return this;",
+                "}"
+            ],
+            "developer_fix": [
+                "@Override public JsonWriter value(Boolean value) throws IOException {",
+                "if (value == null) {",
+                "return nullValue();",
+                "}",
+                "put(new JsonPrimitive(value));",
+                "return this;",
+                "}"
+            ]
+        },
+        {
+            "file_path": "src/main/java/com/google/gson/internal/bind/TypeAdapters.java",
+            "buggy_line numbers": [
+                2051
+            ],
+            "fix_type": "delete",
+            "fix": [
+                ""
+            ],
+            "developer_fix": []
+        },
+        {
+            "file_path": "src/main/java/com/google/gson/stream/JsonWriter.java",
+            "buggy_line numbers": [
+                2053
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "public JsonWriter value(Boolean bool) throws IOException {",
+                "    if (bool == null) {",
+                "        return nullValue();",
+                "    }",
+                "    writeDeferredName();",
+                "    beforeValue();",
+                "    out.write(bool.booleanValue() ? \"true\" : \"false\");",
+                "    return this;",
+                "}"
+            ],
+            "developer_fix": [
+                "public JsonWriter value(Boolean value) throws IOException {",
+                "if (value == null) {",
+                "return nullValue();",
+                "}",
+                "writeDeferredName();",
+                "beforeValue();",
+                "out.write(value ? \"true\" : \"false\");",
+                "return this;",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/3. Iteration 2 with loc 3/3. Iteration 3 with loc 2/3. ",
+    "time_cost": 1207.9934324444521
+}

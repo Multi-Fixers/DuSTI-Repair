@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/math/stat/regression/SimpleRegression.java",
+            "buggy_line numbers": [
+                264
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return sumYY - sumXY * sumXY / sumXX;"
+            ],
+            "developer_fix": [
+                "return sumYY - sumXY * sumXY / sumXX;"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 46.390459691193773
+}

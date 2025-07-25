@@ -1,0 +1,24 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/com/fasterxml/jackson/databind/type/TypeFactory.java",
+            "buggy_line numbers": [
+                1021
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "boolean isPropertiesClass = rawClass == Properties.class;",
+                "if (isPropertiesClass) {",
+                "return MapType.construct(rawClass, CORE_TYPE_STRING, CORE_TYPE_STRING);",
+                "}"
+            ],
+            "developer_fix": [
+                "if (rawClass == Properties.class) {",
+                "return MapType.construct(rawClass, CORE_TYPE_STRING, CORE_TYPE_STRING);",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 55.415891536901
+}

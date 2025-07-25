@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java",
+            "buggy_line numbers": [
+                1797
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (dataset == null) {"
+            ],
+            "developer_fix": [
+                "if (dataset == null) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 47.230459690093994
+}

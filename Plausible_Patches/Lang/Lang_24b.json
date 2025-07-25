@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java", "buggy_line numbers": [1413], "fix_type": "replace", "fix": ["return foundDigit && !hasExp && !hasDecPoint;"], "developer_fix": ["return foundDigit && !hasExp && !hasDecPoint;"]}], "iter_path": "Iteration 1 with loc 1/1. Iteration 2 with loc 1/1. ", "time_cost": 682.0914936065674}

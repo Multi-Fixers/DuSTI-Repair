@@ -1,0 +1,32 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java",
+            "buggy_line numbers": [
+                51
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "setElitismRate(elitismRate);"
+            ],
+            "developer_fix": [
+                "setElitismRate(elitismRate);"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java",
+            "buggy_line numbers": [
+                65
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "setElitismRate(elitismRate);"
+            ],
+            "developer_fix": [
+                "setElitismRate(elitismRate);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 64.35442229578801
+}

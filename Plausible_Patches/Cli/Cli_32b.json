@@ -1,0 +1,23 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+            "buggy_line numbers": [
+                937,
+                938,
+                939,
+                940,
+                941
+            ],
+            "fix_type": "replace",
+            "fix": [
+                ""
+            ],
+            "developer_fix": [
+                ""
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. Iteration 2 with loc 1/1. Iteration 3 with loc 1/1. ",
+    "time_cost": 58.63002371788025
+}

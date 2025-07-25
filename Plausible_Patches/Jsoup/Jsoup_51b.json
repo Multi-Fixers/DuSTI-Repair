@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/jsoup/parser/CharacterReader.java", "buggy_line numbers": [300], "fix_type": "replace", "fix": ["return !isEmpty() && Character.isLetter(input[pos]);"], "developer_fix": ["return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || Character.isLetter(c);"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 20.140390634536743}

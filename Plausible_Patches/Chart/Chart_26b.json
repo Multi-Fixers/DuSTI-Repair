@@ -1,0 +1,32 @@
+{
+    "patch": [
+        {
+            "file_path": "source/org/jfree/chart/axis/Axis.java",
+            "buggy_line numbers": [
+                1192
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (Objects.nonNull(owner)) {"
+            ],
+            "developer_fix": [
+                "if (owner != null) {"
+            ]
+        },
+        {
+            "file_path": "source/org/jfree/chart/axis/Axis.java",
+            "buggy_line numbers": [
+                1197
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "}"
+            ],
+            "developer_fix": [
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 61.899749814211
+}

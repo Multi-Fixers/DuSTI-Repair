@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/collections/CollectionUtils.java",
+            "buggy_line numbers": [
+                1121
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return ListUtils.removeAll(collection, remove);"
+            ],
+            "developer_fix": [
+                "return ListUtils.removeAll(collection, remove);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 43.34139847755432
+}

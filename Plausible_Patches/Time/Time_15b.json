@@ -1,0 +1,23 @@
+{
+    "patch": [
+        {
+            "file_path": "source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java",
+            "buggy_line numbers": [
+                138
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (Objects.equals(val1, Long.MIN_VALUE)) {",
+                "throw new ArithmeticException(String.format(\"Multiplication overflows a long: %d * %d\", val1, val2));}",
+                "}"
+            ],
+            "developer_fix": [
+                "if (val1 == Long.MIN_VALUE) {",
+                "throw new ArithmeticException(\"Multiplication overflows a long: \" + val1 + \" * \" + val2);",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 57.4456133290781
+}

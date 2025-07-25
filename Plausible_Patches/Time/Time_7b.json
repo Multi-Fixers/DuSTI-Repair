@@ -1,0 +1,30 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/joda/time/format/DateTimeFormatter.java",
+            "buggy_line numbers": [
+                708
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "Chronology chronology = DateTimeUtils.getChronology(chrono);",
+                "DateTimeField yearField = chronology.year();",
+                "int defaultYear = yearField.get(instantMillis);"
+            ],
+            "developer_fix": [
+                "int defaultYear = DateTimeUtils.getChronology(chrono).year().get(instantMillis);"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/joda/time/format/DateTimeFormatter.java",
+            "buggy_line numbers": [
+                710
+            ],
+            "fix_type": "delete",
+            "fix": [],
+            "developer_fix": []
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 78.914256878192
+}

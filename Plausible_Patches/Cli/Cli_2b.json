@@ -1,0 +1,36 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/cli/PosixParser.java",
+            "buggy_line numbers": [
+                305
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (!tokens.contains(token)) {",
+                "tokens.add(token);",
+                "}",
+                "break;"
+            ],
+            "developer_fix": [
+                "tokens.add(token);",
+                "break;"
+            ]
+        },
+        {
+            "file_path": "src/java/org/apache/commons/cli/PosixParser.java",
+            "buggy_line numbers": [
+                309
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "}"
+            ],
+            "developer_fix": [
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 69.487555917229
+}

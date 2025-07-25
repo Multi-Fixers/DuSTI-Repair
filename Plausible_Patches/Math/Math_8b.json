@@ -1,0 +1,32 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java",
+            "buggy_line numbers": [
+                181
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "public T[] sample(int sampleSize) throws NotStrictlyPositiveException {"
+            ],
+            "developer_fix": [
+                "public T[] sample(int sampleSize) throws NotStrictlyPositiveException {"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java",
+            "buggy_line numbers": [
+                187
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "final Object[] out = new Object[sampleSize];"
+            ],
+            "developer_fix": [
+                "final Object[] out = new Object[sampleSize];"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 73.499534356237
+}

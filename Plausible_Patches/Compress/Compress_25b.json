@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java",
+            "buggy_line numbers": [
+                184
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "buf.limit(0);"
+            ],
+            "developer_fix": [
+                "buf.limit(0);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 49.106789233211
+}

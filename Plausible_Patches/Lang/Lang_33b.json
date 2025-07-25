@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/apache/commons/lang3/ClassUtils.java", "buggy_line numbers": [910], "fix_type": "replace", "fix": ["classes[i] = array[i] == null ? null : array[i].getClass();"], "developer_fix": ["classes[i] = array[i] == null ? null : array[i].getClass();"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 64.08710741996765}

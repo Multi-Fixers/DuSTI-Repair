@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/codec/language/Caverphone.java",
+            "buggy_line numbers": [
+                76
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "txt = txt.replaceAll(\"mb$\", \"m2\");"
+            ],
+            "developer_fix": [
+                "txt = txt.replaceAll(\"mb$\", \"m2\");"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 49.842256672819
+}

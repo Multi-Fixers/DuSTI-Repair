@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/com/fasterxml/jackson/core/JsonPointer.java",
+            "buggy_line numbers": [
+                193
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "char c = str.charAt(i);"
+            ],
+            "developer_fix": [
+                "char c = str.charAt(i);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 38.316439127822
+}

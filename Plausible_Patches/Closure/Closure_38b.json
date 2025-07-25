@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/CodeConsumer.java",
+            "buggy_line numbers": [
+                245
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (prev == '-' && (x < 0 || negativeZero)) {"
+            ],
+            "developer_fix": [
+                "if ((x < 0 || negativeZero) && prev == '-') {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 69.02213214389563
+}

@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java", "buggy_line numbers": [175], "fix_type": "replace", "fix": ["double sum = 0;"], "developer_fix": ["double sum = 0;"]}], "iter_path": "Iteration 1 with loc 1/1. Iteration 2 with loc 1/1. ", "time_cost": 426.8991084098816}

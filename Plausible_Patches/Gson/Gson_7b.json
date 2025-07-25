@@ -1,0 +1,54 @@
+{
+    "patch": [
+        {
+            "file_path": "gson/src/main/java/com/google/gson/stream/JsonReader.java",
+            "buggy_line numbers": [
+                956
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "} else if (p == PEEKED_UNQUOTED) {",
+                "peekedString = nextUnquotedValue();",
+                "} else if (p != PEEKED_BUFFERED) {",
+                "}",
+                "",
+                "peeked = PEEKED_BUFFERED;",
+                "if (peekedString != null) {"
+            ],
+            "developer_fix": [
+                "}"
+            ]
+        },
+        {
+            "file_path": "gson/src/main/java/com/google/gson/stream/JsonReader.java",
+            "buggy_line numbers": [
+                1182
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "} else if (p == PEEKED_SINGLE_QUOTED || p == PEEKED_DOUBLE_QUOTED) {"
+            ],
+            "developer_fix": [
+                "} else if (p == PEEKED_SINGLE_QUOTED || p == PEEKED_DOUBLE_QUOTED || p == PEEKED_UNQUOTED) {",
+                "if (p == PEEKED_UNQUOTED) {",
+                "peekedString = nextUnquotedValue();",
+                "} else {"
+            ]
+        },
+        {
+            "file_path": "gson/src/main/java/com/google/gson/stream/JsonReader.java",
+            "buggy_line numbers": [
+                1184
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "} else if (p == PEEKED_UNQUOTED) { peekedString = nextUnquotedValue(); } else if (p != PEEKED_BUFFERED) { }  peeked = PEEKED_BUFFERED; if (peekedString != null) {"
+            ],
+            "developer_fix": [
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 3/4. Iteration 2 with loc 4/4. ",
+    "time_cost": 2070.4691326618195
+}

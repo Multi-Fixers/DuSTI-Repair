@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/jxpath/ri/compiler/CoreOperationRelationalExpression.java",
+            "buggy_line numbers": [
+                42
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return compute(args[0].compute(context), args[1].compute(context))"
+            ],
+            "developer_fix": [
+                "return compute(args[0].compute(context), args[1].compute(context))"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 55.3455622133432
+}

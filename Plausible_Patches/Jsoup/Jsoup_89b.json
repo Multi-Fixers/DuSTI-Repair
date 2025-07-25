@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/jsoup/nodes/Attribute.java", "buggy_line numbers": [88], "fix_type": "replace", "fix": ["String oldVal = getValue();", "this.val = val;"], "developer_fix": ["String oldVal = this.val;"]}], "iter_path": "Iteration 1 with loc 1/2. ", "time_cost": 32.798956632614136}

@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java", "buggy_line numbers": [1134], "fix_type": "insert", "fix": ["TimeZone zone = calendar.getTimeZone();"], "developer_fix": ["TimeZone zone = calendar.getTimeZone();"]}], "iter_path": "Iteration 1 with loc 3/3. ", "time_cost": 336.5662751197815}

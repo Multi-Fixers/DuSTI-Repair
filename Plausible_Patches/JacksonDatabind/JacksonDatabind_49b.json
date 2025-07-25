@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/com/fasterxml/jackson/databind/ser/impl/WritableObjectId.java", "buggy_line numbers": [50], "fix_type": "insert", "fix": ["if (id == null)"], "developer_fix": ["if (id == null) {"]}], "iter_path": "Iteration 1 with loc 1/2. ", "time_cost": 159.28807950019836}

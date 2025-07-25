@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/java/org/apache/commons/codec/binary/Base64InputStream.java", "buggy_line numbers": [169, 170, 171], "fix_type": "delete", "fix": [""], "developer_fix": []}], "iter_path": "Iteration 1 with loc 2/2. ", "time_cost": 46.01197123527527}

@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/CodeGenerator.java",
+            "buggy_line numbers": [
+                1045
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (c >= 0x20 && c <= 0x7f) {"
+            ],
+            "developer_fix": [
+                "if (c > 0x1f && c <= 0x7f) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 50.11543487736520
+}

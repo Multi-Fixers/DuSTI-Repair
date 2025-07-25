@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/apache/commons/csv/CSVRecord.java", "buggy_line numbers": [180], "fix_type": "insert", "fix": ["if (mapping == null) {", "return map;", "}"], "developer_fix": ["if (mapping == null) {", "return map;", "}"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 16.812291383743286}

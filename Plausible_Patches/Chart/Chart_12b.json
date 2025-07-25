@@ -1,0 +1,25 @@
+{
+    "patch": [
+        {
+            "file_path": "source/org/jfree/chart/plot/MultiplePiePlot.java",
+            "buggy_line numbers": [
+                145
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "this.dataset = dataset;",
+                "if (dataset != null) {",
+                "dataset.addChangeListener(this);",
+                "}",
+                "setAggregatedItemsKey(\"Other\");",
+                "this.aggregatedItemsPaint = Color.lightGray;",
+                "this.sectionPaints = new HashMap();"
+            ],
+            "developer_fix": [
+                "setDataset(dataset);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. Iteration 2 with loc 1/1. ",
+    "time_cost": 94.8222451210022
+}

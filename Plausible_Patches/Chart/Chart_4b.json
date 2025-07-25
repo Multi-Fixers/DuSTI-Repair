@@ -1,0 +1,102 @@
+{
+    "patch": [
+        {
+            "file_path": "source/org/jfree/chart/plot/XYPlot.java",
+            "buggy_line numbers": [
+                4493
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (r instanceof AbstractXYItemRenderer) {",
+                "//            AbstractXYItemRenderer rr = (AbstractXYItemRenderer) r;",
+                "//                    Collection c = rr.getAnnotations();",
+                "//                    Iterator i = c.iterator();",
+                "//                    while (i.hasNext()) {",
+                "//                        XYAnnotation a = (XYAnnotation) i.next();",
+                "//                        if (a instanceof XYAnnotationBoundsInfo) {",
+                "//                            includedAnnotations.add(a);",
+                "//                        }",
+                "//                    }",
+                "}",
+                "//                if (r != null && r instanceof AbstractXYItemRenderer) {",
+                "//                    AbstractXYItemRenderer rr = (AbstractXYItemRenderer) r;",
+                "//                    Collection c = rr.getAnnotations();",
+                "//                    Iterator i = c.iterator();",
+                "//                    while (i.hasNext()) {",
+                "//                        XYAnnotation a = (XYAnnotation) i.next();",
+                "//                        if (a instanceof XYAnnotationBoundsInfo) {",
+                "//                            includedAnnotations.add(a);",
+                "//                        }",
+                "//                    }",
+                "//                }",
+                "",
+                "//",
+                "//                Collection c = r.getAnnotations();",
+                "//                Iterator i = c.iterator();",
+                "//                while (i.hasNext()) {",
+                "//                    XYAnnotation a = (XYAnnotation) i.next();",
+                "//                    if (a instanceof XYAnnotationBoundsInfo) {",
+                "//                        includedAnnotations.add(a);",
+                "//                    }",
+                "//                }",
+                "//",
+                "//",
+                "//            }",
+                "//        }",
+                "",
+                "//        Iterator iterator = mappedDatasets.iterator();",
+                "//        while (iterator.hasNext()) {",
+                "//            XYDataset d = (XYDataset) iterator.next();",
+                "//            if (d != null) {",
+                "//                XYItemRenderer r = getRendererForDataset(d);",
+                "//                if (isDomainAxis) {",
+                "//                    if (r != null) {",
+                "//                        result = Range.combine(result, r.findDomainBounds(d));",
+                "//                    }",
+                "//                    else {",
+                "//                        result = Range.combine(result,",
+                "//                                DatasetUtilities.findDomainBounds(d));",
+                "//                    }",
+                "//                }",
+                "//                else {",
+                "//                    if (r != null) {",
+                "//                        result = Range.combine(result, r.findRangeBounds(d));",
+                "//                    }",
+                "//                    else {",
+                "//                        result = Range.combine(result,",
+                "//                                DatasetUtilities.findRangeBounds(d));",
+                "//                    }",
+                "//                }",
+                "",
+                "//                    Collection c = r.getAnnotations();",
+                "//                    Iterator i = c.iterator();",
+                "//                    while (i.hasNext()) {",
+                "//                        XYAnnotation a = (XYAnnotation) i.next();",
+                "//                        if (a instanceof XYAnnotationBoundsInfo) {",
+                "//                            includedAnnotations.add(a);",
+                "//                        }",
+                "//                    }",
+                "}",
+                "}"
+            ],
+            "developer_fix": [
+                "if (r != null) {"
+            ]
+        },
+        {
+            "file_path": "source/org/jfree/chart/plot/XYPlot.java",
+            "buggy_line numbers": [
+                4501
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "}"
+            ],
+            "developer_fix": [
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 2/2. Iteration 2 with loc 1/2. Iteration 3 with loc 2/2. ",
+    "time_cost": 868.4335517883301
+}

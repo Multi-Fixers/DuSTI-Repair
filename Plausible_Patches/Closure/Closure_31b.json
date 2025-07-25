@@ -1,0 +1,17 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/Compiler.java",
+            "buggy_line numbers": [
+                1285
+            ],
+            "fix_type": "delete",
+            "fix": [
+                ""
+            ],
+            "developer_fix": []
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 198.56235480308533
+}

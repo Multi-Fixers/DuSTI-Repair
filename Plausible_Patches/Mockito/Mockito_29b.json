@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/org/mockito/internal/matchers/Same.java", "buggy_line numbers": [29], "fix_type": "replace", "fix": ["description.appendText(wanted == null ? \"null\" : wanted.toString());"], "developer_fix": ["description.appendText(wanted == null ? \"null\" : wanted.toString());"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 159.46667647361755}

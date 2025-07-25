@@ -1,0 +1,20 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "buggy_line numbers": [
+                342
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "value = value.isEmpty() ? attr.getValue() : value;"
+            ],
+            "developer_fix": [
+                "if (value.length() == 0)",
+                "value = attr.getValue(); // if it could not be made abs, run as-is to allow custom unknown protocols"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 39.667892453901
+}

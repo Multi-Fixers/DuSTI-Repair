@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java", "buggy_line numbers": [180], "fix_type": "replace", "fix": ["&& !TreeNode.class.isAssignableFrom(t.getRawClass()));"], "developer_fix": ["&& !TreeNode.class.isAssignableFrom(t.getRawClass()));"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 155.64144849777222}

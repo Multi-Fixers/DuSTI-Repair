@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/CommandLineRunner.java",
+            "buggy_line numbers": [
+                862
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "options.setWarningLevel(JsMessageVisitor.MSG_CONVENTIONS, CheckLevel.OFF);"
+            ],
+            "developer_fix": [
+                "options.setWarningLevel(JsMessageVisitor.MSG_CONVENTIONS, CheckLevel.OFF);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 42.33221348900553
+}

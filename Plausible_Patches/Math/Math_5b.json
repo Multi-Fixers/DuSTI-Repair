@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/math3/complex/Complex.java",
+            "buggy_line numbers": [
+                305
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return INF;"
+            ],
+            "developer_fix": [
+                "return INF;"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 29.556452213478
+}

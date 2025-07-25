@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/com/fasterxml/jackson/core/json/async/NonBlockingJsonParser.java",
+            "buggy_line numbers": [
+                108
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "_currBufferStart = start;"
+            ],
+            "developer_fix": [
+                "_currBufferStart = start;"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 49.321943201563
+}

@@ -1,0 +1,38 @@
+{
+    "patch": [
+        {
+            "file_path": "source/org/jfree/data/xy/XYSeries.java",
+            "buggy_line numbers": [
+                544
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (this.allowDuplicateXValues == true) {",
+                "this.add(x, y);",
+                "return null;",
+                "}"
+            ],
+            "developer_fix": [
+                "if (this.allowDuplicateXValues) {",
+                "add(x, y);",
+                "return null;",
+                "}"
+            ]
+        },
+        {
+            "file_path": "source/org/jfree/data/xy/XYSeries.java",
+            "buggy_line numbers": [
+                548
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (index >= 0) {"
+            ],
+            "developer_fix": [
+                "if (index != -1) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 67.834988501909
+}

@@ -1,0 +1,23 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/jxpath/ri/compiler/CoreOperationRelationalExpression.java",
+            "buggy_line numbers": [
+                77
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (Double.isNaN(ld) || Double.isNaN(rd)) {",
+                "return false;",
+                "}"
+            ],
+            "developer_fix": [
+                "if (Double.isNaN(rd)) {",
+                "return false;",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 2/2. ",
+    "time_cost": 50.1605384349823
+}

@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+            "buggy_line numbers": [
+                1797
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "pos += Character.charCount(Character.codePointAt(input, pos));"
+            ],
+            "developer_fix": [
+                "pos += Character.charCount(Character.codePointAt(input, pos));"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 44.776899244421
+}

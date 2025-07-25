@@ -1,0 +1,30 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/collections/list/TreeList.java",
+            "buggy_line numbers": [
+                908
+            ],
+            "fix_type": "delete",
+            "fix": [
+                "parent.remove(currentIndex);"
+            ],
+            "developer_fix": []
+        },
+        {
+            "file_path": "src/main/java/org/apache/commons/collections/list/TreeList.java",
+            "buggy_line numbers": [
+                913
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "next = null;"
+            ],
+            "developer_fix": [
+                "next = null;"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 2/3. Iteration 2 with loc 3/3. Iteration 3 with loc 3/3. ",
+    "time_cost": 1027.6243703365326
+}

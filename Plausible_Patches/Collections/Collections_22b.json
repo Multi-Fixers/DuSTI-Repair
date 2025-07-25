@@ -1,0 +1,41 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/collections4/map/ListOrderedMap.java",
+            "buggy_line numbers": [
+                246,
+                247
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "put(index, entry.getKey(), entry.getValue());"
+            ],
+            "developer_fix": [
+                "final K key = entry.getKey();",
+                "final boolean contains = containsKey(key);"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/apache/commons/collections4/map/ListOrderedMap.java",
+            "buggy_line numbers": [
+                250
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (index < 0 || index > size()) {",
+                "throw new IndexOutOfBoundsException(\"Index: \" + index + \", Size: \" + size());",
+                "}",
+                "final K key = entry.getKey();",
+                "final V value = entry.getValue();",
+                "if (containsKey(key) == false) {",
+                "insertOrder.add(index, key);"
+            ],
+            "developer_fix": [
+                "put(index, entry.getKey(), entry.getValue());",
+                "if (!contains) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/2. Iteration 2 reduced failing tests with loc 2. Iteration 2 reduced failing tests with loc 1. ",
+    "time_cost": 63.10797691345215
+}

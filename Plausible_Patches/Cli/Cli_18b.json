@@ -1,0 +1,44 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/cli/PosixParser.java",
+            "buggy_line numbers": [
+                128
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "tokens.add(token);"
+            ],
+            "developer_fix": [
+                "tokens.add(token);"
+            ]
+        },
+        {
+            "file_path": "src/java/org/apache/commons/cli/PosixParser.java",
+            "buggy_line numbers": [
+                213,
+                214,
+                215,
+                216
+            ],
+            "fix_type": "delete",
+            "fix": [],
+            "developer_fix": []
+        },
+        {
+            "file_path": "src/java/org/apache/commons/cli/PosixParser.java",
+            "buggy_line numbers": [
+                241
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "tokens.add(token);"
+            ],
+            "developer_fix": [
+                "tokens.add(token);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/3. Iteration 2 with loc 2/3. Iteration 3 with loc 3/3. ",
+    "time_cost": 1032.590812123633
+}

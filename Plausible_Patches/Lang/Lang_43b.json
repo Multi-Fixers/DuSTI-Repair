@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java", "buggy_line numbers": [422], "fix_type": "insert", "fix": ["next(pos);"], "developer_fix": ["next(pos);"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 176.80321526527405}

@@ -1,0 +1,24 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/csv/CSVFormat.java",
+            "buggy_line numbers": [
+                1039
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (dataset == null) {"
+            ],
+            "developer_fix": [
+                "private boolean isInvalidStartChar(int c) {",
+                "return c < 0x20 ||",
+                "(c > 0x21 && c < 0x23) ||",
+                "(c > 0x2B && c < 0x2D) ||",
+                "c > 0x7E;",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 49.1830459739943
+}

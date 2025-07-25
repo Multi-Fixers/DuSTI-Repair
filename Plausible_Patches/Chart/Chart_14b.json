@@ -1,0 +1,74 @@
+{
+    "patch": [
+        {
+            "file_path": "source/org/jfree/chart/plot/CategoryPlot.java",
+            "buggy_line numbers": [
+                2166
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (markers == null) {",
+                "return false;",
+                "}"
+            ],
+            "developer_fix": [
+                "if (markers == null) {",
+                "return false;",
+                "}"
+            ]
+        },
+        {
+            "file_path": "source/org/jfree/chart/plot/CategoryPlot.java",
+            "buggy_line numbers": [
+                2448
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (markers == null) {",
+                "return false;",
+                "}"
+            ],
+            "developer_fix": [
+                "if (markers == null) {",
+                "return false;",
+                "}"
+            ]
+        },
+        {
+            "file_path": "source/org/jfree/chart/plot/XYPlot.java",
+            "buggy_line numbers": [
+                2293
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (markers == null) {",
+                "return false;",
+                "}"
+            ],
+            "developer_fix": [
+                "if (markers == null) {",
+                "return false;",
+                "}"
+            ]
+        },
+        {
+            "file_path": "source/org/jfree/chart/plot/XYPlot.java",
+            "buggy_line numbers": [
+                2529
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (markers == null) {",
+                "return false;",
+                "}"
+            ],
+            "developer_fix": [
+                "if (markers == null) {",
+                "return false;",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. Iteration 1 reduced failing tests with loc 3. Iteration 1 reduced failing tests with loc 4. ",
+    "time_cost": 136.9369285106659
+}

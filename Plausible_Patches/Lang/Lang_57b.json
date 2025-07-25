@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/java/org/apache/commons/lang/LocaleUtils.java", "buggy_line numbers": [223], "fix_type": "replace", "fix": ["return availableLocaleSet().contains(locale);"], "developer_fix": ["return availableLocaleList().contains(locale);"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 56.67849636077881}

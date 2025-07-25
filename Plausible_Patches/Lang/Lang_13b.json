@@ -1,0 +1,22 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+            "buggy_line numbers": [
+                268
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "try {",
+                "return super.resolveClass(desc);",
+                "} catch (ClassNotFoundException ignore) {",
+                "}"
+            ],
+            "developer_fix": [
+                "try {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 3/4. ",
+    "time_cost": 314.5762176513672
+}

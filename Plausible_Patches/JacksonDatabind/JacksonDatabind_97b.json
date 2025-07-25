@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/com/fasterxml/jackson/databind/node/POJONode.java", "buggy_line numbers": [114], "fix_type": "replace", "fix": ["ctxt.findValueSerializer(_value.getClass(), null).serialize(_value, gen, ctxt);"], "developer_fix": ["ctxt.defaultSerializeValue(_value, gen);"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 337.5892412662506}

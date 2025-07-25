@@ -1,0 +1,32 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/com/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory.java",
+            "buggy_line numbers": [
+                67
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (typeAdapter != null) {"
+            ],
+            "developer_fix": [
+                "if (typeAdapter != null) {"
+            ]
+        },
+        {
+            "file_path": "src/main/java/com/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory.java",
+            "buggy_line numbers": [
+                68
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "}"
+            ],
+            "developer_fix": [
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 65.788311246901
+}

@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java",
+            "buggy_line numbers": [
+                1135
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "int j = 4 * (n - 1);"
+            ],
+            "developer_fix": [
+                "int j = 4 * (n - 1);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 35.19993242432033
+}

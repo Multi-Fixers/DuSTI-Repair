@@ -1,0 +1,23 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/cli/PosixParser.java",
+            "buggy_line numbers": [
+                239
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "else",
+                "{",
+                "burstToken(token, stopAtNonOption);",
+                "}"
+            ],
+            "developer_fix": [
+                "",
+                "tokens.add(token);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 3/3. ",
+    "time_cost": 34.98447775840759
+}

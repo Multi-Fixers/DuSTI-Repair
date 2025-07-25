@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java", "buggy_line numbers": [307, 308, 309, 310, 311, 312, 313, 314], "fix_type": "delete", "fix": [""], "developer_fix": []}], "iter_path": "Iteration 1 with loc 2/2. ", "time_cost": 168.48074412345886}

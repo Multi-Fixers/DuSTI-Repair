@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java", "buggy_line numbers": [198], "fix_type": "replace", "fix": ["if (fa * fb > 0.0 ) {"], "developer_fix": ["if (fa * fb > 0.0 ) {"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 92.57000851631165}

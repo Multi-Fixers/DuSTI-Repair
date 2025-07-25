@@ -1,0 +1,45 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/math/distribution/FDistributionImpl.java",
+            "buggy_line numbers": [
+                144
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "double ret = 1.0;"
+            ],
+            "developer_fix": [
+                "double ret = 1.0;"
+            ]
+        },
+        {
+            "file_path": "src/java/org/apache/commons/math/distribution/FDistributionImpl.java",
+            "buggy_line numbers": [
+                146
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (d > 2.0) {"
+            ],
+            "developer_fix": [
+                "if (d > 2.0) {"
+            ]
+        },
+        {
+            "file_path": "src/java/org/apache/commons/math/distribution/FDistributionImpl.java",
+            "buggy_line numbers": [
+                148
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "}"
+            ],
+            "developer_fix": [
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 2/3. Iteration 2 with loc 3/3. Iteration 3 with loc 1/3. ",
+    "time_cost": 798.454760014394
+}

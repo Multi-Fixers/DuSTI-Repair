@@ -1,0 +1,21 @@
+{
+    "patch": [
+        {
+            "file_path": "source/org/jfree/data/time/TimeSeries.java",
+            "buggy_line numbers": [
+                1057
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "copy.minY = Double.NaN;",
+                "copy.maxY = Double.NaN;"
+            ],
+            "developer_fix": [
+                "copy.minY = Double.NaN;",
+                "copy.maxY = Double.NaN;"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 56.456712478803
+}

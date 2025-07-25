@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java", "buggy_line numbers": [121], "fix_type": "replace", "fix": ["return fit(guess);"], "developer_fix": ["return fit(guess);"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 405.1531934738159}

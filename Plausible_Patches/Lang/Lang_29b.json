@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/lang3/SystemUtils.java",
+            "buggy_line numbers": [
+                1672
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "private static int toJavaVersionInt(String version) {"
+            ],
+            "developer_fix": [
+                "static int toJavaVersionInt(String version) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 54.1381347869113
+}

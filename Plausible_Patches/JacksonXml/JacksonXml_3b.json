@@ -1,0 +1,30 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java",
+            "buggy_line numbers": [
+                669
+            ],
+            "fix_type": "delete",
+            "fix": [
+                ""
+            ],
+            "developer_fix": []
+        },
+        {
+            "file_path": "src/main/java/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java",
+            "buggy_line numbers": [
+                671
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return (_currText = _xmlTokens.getText());"
+            ],
+            "developer_fix": [
+                "return (_currText = _xmlTokens.getText());"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 47.583347813203
+}

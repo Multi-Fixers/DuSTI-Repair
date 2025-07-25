@@ -1,0 +1,21 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+            "buggy_line numbers": [
+                58
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "boolean isCarriageReturn = current == '\r';",
+                "boolean isLoneNewline = current == '\n' && lastChar != '\r';",
+                "if (isCarriageReturn || isLoneNewline) {"
+            ],
+            "developer_fix": [
+                "if (current == '\\r' || (current == '\\n' && lastChar != '\\r')) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 50.3114606331339
+}

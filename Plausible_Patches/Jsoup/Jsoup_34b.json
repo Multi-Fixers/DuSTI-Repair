@@ -1,0 +1,21 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/jsoup/parser/CharacterReader.java",
+            "buggy_line numbers": [
+                91
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "boolean withinLength = offset < length;",
+                "boolean lastInBounds = last <= length;",
+                "if (withinLength && lastInBounds) {"
+            ],
+            "developer_fix": [
+                "if (offset < length && last <= length) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 54.798024093994
+}

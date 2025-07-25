@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/lang/BooleanUtils.java",
+            "buggy_line numbers": [
+                682
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "return false;"
+            ],
+            "developer_fix": [
+                "return false;"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 22.904258148487
+}

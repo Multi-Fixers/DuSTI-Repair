@@ -1,0 +1,30 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/Normalize.java",
+            "buggy_line numbers": [
+                89
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "removeDuplicateDeclarations(root);"
+            ],
+            "developer_fix": [
+                "removeDuplicateDeclarations(root);"
+            ]
+        },
+        {
+            "file_path": "src/com/google/javascript/jscomp/Normalize.java",
+            "buggy_line numbers": [
+                94
+            ],
+            "fix_type": "delete",
+            "fix": [
+                ""
+            ],
+            "developer_fix": []
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 65.11998700432655
+}

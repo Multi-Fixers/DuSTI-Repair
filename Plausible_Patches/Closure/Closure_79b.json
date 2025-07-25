@@ -1,0 +1,32 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/Normalize.java",
+            "buggy_line numbers": [
+                122
+            ],
+            "fix_type": "replace",
+            "fix": [
+                ".traverseRoots(externs, root);"
+            ],
+            "developer_fix": [
+                ".traverseRoots(externs, root);"
+            ]
+        },
+        {
+            "file_path": "src/com/google/javascript/jscomp/VarCheck.java",
+            "buggy_line numbers": [
+                221
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "compiler.reportCodeChange();"
+            ],
+            "developer_fix": [
+                "compiler.reportCodeChange();"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 75.66544299612006
+}

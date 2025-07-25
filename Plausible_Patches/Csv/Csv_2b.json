@@ -1,0 +1,42 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/csv/CSVRecord.java",
+            "buggy_line numbers": [
+                85
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "try {"
+            ],
+            "developer_fix": [
+                "try {"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/apache/commons/csv/CSVRecord.java",
+            "buggy_line numbers": [
+                86
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "} catch (ArrayIndexOutOfBoundsException e) {",
+                "throw new IllegalArgumentException(",
+                "String.format(",
+                "\"Header '%s' has index %d, but the CSV record only contains %d values!\",",
+                "name, index.intValue(), values.length));",
+                "}"
+            ],
+            "developer_fix": [
+                "} catch (ArrayIndexOutOfBoundsException e) {",
+                "throw new IllegalArgumentException(",
+                "String.format(",
+                "\"Index for header '%s' is %d but CSVRecord only has %d values!\",",
+                "name, index.intValue(), values.length));",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 128.23137769045611
+}

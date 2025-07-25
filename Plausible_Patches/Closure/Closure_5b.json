@@ -1,0 +1,23 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/InlineObjectLiterals.java",
+            "buggy_line numbers": [
+                176
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (gramps.isDelProp()) {",
+                "return false;",
+                "}"
+            ],
+            "developer_fix": [
+                "if (gramps.isDelProp()) {",
+                "return false;",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 48.158104860281
+}

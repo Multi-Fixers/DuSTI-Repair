@@ -1,0 +1,32 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java",
+            "buggy_line numbers": [
+                172
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "case Token.THIS:"
+            ],
+            "developer_fix": [
+                "case Token.THIS:"
+            ]
+        },
+        {
+            "file_path": "src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java",
+            "buggy_line numbers": [
+                173
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "break;"
+            ],
+            "developer_fix": [
+                "break;"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 50.22233455405627
+}

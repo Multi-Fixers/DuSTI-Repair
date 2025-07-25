@@ -1,0 +1,40 @@
+{
+    "patch": [
+        {
+            "file_path": "source/org/jfree/chart/plot/CategoryPlot.java",
+            "buggy_line numbers": [
+                698
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (axis == null) {",
+                "throw new IllegalArgumentException(\"Null 'axis' argument.\");",
+                "}"
+            ],
+            "developer_fix": [
+                "if (axis == null) {",
+                "throw new IllegalArgumentException(\"Null 'axis' argument.\");",
+                "}"
+            ]
+        },
+        {
+            "file_path": "source/org/jfree/chart/plot/CategoryPlot.java",
+            "buggy_line numbers": [
+                973
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (axis == null) {",
+                "throw new IllegalArgumentException(\"Null 'axis' argument.\");",
+                "}"
+            ],
+            "developer_fix": [
+                "if (axis == null) {",
+                "throw new IllegalArgumentException(\"Null 'axis' argument.\");",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/2. Iteration 2 reduced failing tests with loc 1. Iteration 3 with loc 2/2. ",
+    "time_cost": 125.8504958152771
+}

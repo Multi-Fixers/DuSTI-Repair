@@ -1,0 +1,35 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/collections/list/SetUniqueList.java",
+            "buggy_line numbers": [
+                227
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "set.add(object);  // add the item at the new position",
+                "return removed;"
+            ],
+            "developer_fix": [
+                "super.remove(pos);  // remove the duplicate by index"
+            ]
+        },
+        {
+            "file_path": "src/java/org/apache/commons/collections/list/SetUniqueList.java",
+            "buggy_line numbers": [
+                230
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "else {",
+                "super.remove(pos);",
+                "}"
+            ],
+            "developer_fix": [
+                "set.add(object);      // add the new item to the unique set"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 2/3. Iteration 2 with loc 3/3. ",
+    "time_cost": 699.1321716308594
+}

@@ -1,0 +1,49 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/CheckSideEffects.java",
+            "buggy_line numbers": [
+                101
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (n.isExprResult() || n.isBlock()) {"
+            ],
+            "developer_fix": [
+                "if (n.isExprResult() || n.isBlock()) {"
+            ]
+        },
+        {
+            "file_path": "src/com/google/javascript/jscomp/CheckSideEffects.java",
+            "buggy_line numbers": [
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127,
+                128,
+                129,
+                130
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (value != null && value.isEmpty()) "
+            ],
+            "developer_fix": [
+                "if (!isResultUsed &&"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/2. Iteration 2 reduced failing tests with loc 1. Iteration 3 with loc 2/2. ",
+    "time_cost": 622.32221493321612
+}

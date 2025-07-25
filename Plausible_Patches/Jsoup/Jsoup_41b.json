@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/jsoup/nodes/Element.java", "buggy_line numbers": [1175], "fix_type": "replace", "fix": ["if (tag != null ? !tag.equals(element.tag) : element.tag != null) return false;", "", "return true;"], "developer_fix": ["return tag.equals(element.tag);"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 26.17729115486145}

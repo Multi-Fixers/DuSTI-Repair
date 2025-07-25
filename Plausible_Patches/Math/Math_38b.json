@@ -1,0 +1,48 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java",
+            "buggy_line numbers": [
+                1660
+            ],
+            "fix_type": "replace",
+            "fix": [
+                ""
+            ],
+            "developer_fix": [
+                "//                     throw new PathIsExploredException(); // XXX"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java",
+            "buggy_line numbers": [
+                1662,
+                1663
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "final int iptMinus1 = ipt - 1;",
+                "final int jptMinus1 = jpt - 1;"
+            ],
+            "developer_fix": [
+                "final int iptMinus1 = ipt - 1;",
+                "final int jptMinus1 = jpt - 1;"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java",
+            "buggy_line numbers": [
+                1752
+            ],
+            "fix_type": "replace",
+            "fix": [
+                ""
+            ],
+            "developer_fix": [
+                "//                 throw new PathIsExploredException(); // XXX"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/3. Iteration 2 with loc 2/3. Iteration 3 with loc 3/3. ",
+    "time_cost": 1196.7727513313293
+}

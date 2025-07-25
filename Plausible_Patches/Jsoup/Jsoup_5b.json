@@ -1,0 +1,22 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/jsoup/parser/Parser.java",
+            "buggy_line numbers": [
+                206
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (value.isEmpty()) {",
+                "tq.advance();",
+                "}"
+            ],
+            "developer_fix": [
+                "if (value.length() == 0) // no key, no val; unknown char, keep popping so not get stuck",
+                "tq.advance();"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 49.231579132798
+}

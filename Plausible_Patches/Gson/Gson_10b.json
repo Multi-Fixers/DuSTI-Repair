@@ -1,0 +1,22 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.java",
+            "buggy_line numbers": [
+                122,
+                123
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "TypeAdapter t = jsonAdapterPresent ? typeAdapter",
+                ": new TypeAdapterRuntimeTypeWrapper(context, typeAdapter, fieldType.getType());"
+            ],
+            "developer_fix": [
+                "TypeAdapter t = jsonAdapterPresent ? typeAdapter",
+                ": new TypeAdapterRuntimeTypeWrapper(context, typeAdapter, fieldType.getType());"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 75.3322562792189
+}

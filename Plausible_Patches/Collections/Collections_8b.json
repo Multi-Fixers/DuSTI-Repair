@@ -1,0 +1,22 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/collections/ExtendedProperties.java",
+            "buggy_line numbers": [
+                816
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "Object value = props.get(key);",
+                "if (value != null) {",
+                "super.put(key, value);",
+                "}"
+            ],
+            "developer_fix": [
+                "super.put(key, props.get(key));"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 49.179394304596
+}

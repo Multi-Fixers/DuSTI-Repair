@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/jsoup/parser/TreeBuilderState.java",
+            "buggy_line numbers": [
+                1451
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "private static String nullString = new String(new char[] {'\u0000'});"
+            ],
+            "developer_fix": [
+                "private static String nullString = String.valueOf('\\u0000');"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 49.841384709382
+}

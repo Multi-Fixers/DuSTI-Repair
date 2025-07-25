@@ -1,0 +1,73 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/lang/time/DurationFormatUtils.java",
+            "buggy_line numbers": [
+                306
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "end.add(Calendar.MONTH, -1);",
+                "days += end.getActualMaximum(Calendar.DAY_OF_MONTH);"
+            ],
+            "developer_fix": [
+                "end.add(Calendar.MONTH, -1);",
+                "days += end.getActualMaximum(Calendar.DAY_OF_MONTH);"
+            ]
+        },
+        {
+            "file_path": "src/java/org/apache/commons/lang/time/DurationFormatUtils.java",
+            "buggy_line numbers": [
+                313
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "end.add(Calendar.MONTH, 1);"
+            ],
+            "developer_fix": [
+                "end.add(Calendar.MONTH, 1);"
+            ]
+        },
+        {
+            "file_path": "src/java/org/apache/commons/lang/time/DurationFormatUtils.java",
+            "buggy_line numbers": [
+                318,
+                319,
+                320,
+                321,
+                322,
+                323,
+                324
+            ],
+            "fix_type": "delete",
+            "fix": [
+                ""
+            ],
+            "developer_fix": []
+        },
+        {
+            "file_path": "source/org/jfree/chart/plot/XYPlot.java",
+            "buggy_line numbers": [
+                432,
+                433,
+                434,
+                435,
+                436,
+                437,
+                438,
+                439,
+                440,
+                441,
+                442,
+                443
+            ],
+            "fix_type": "delete",
+            "fix": [
+                ""
+            ],
+            "developer_fix": []
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 2. Iteration 1 reduced failing tests with loc 3. Iteration 1 reduced failing tests with loc 4. Iteration 2 with loc 1/4. ",
+    "time_cost": 255.356933269285
+}

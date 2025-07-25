@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/ProcessClosurePrimitives.java",
+            "buggy_line numbers": [
+                329
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (provided != null || requiresLevel.isOn()) {"
+            ],
+            "developer_fix": [
+                "if (provided != null || requiresLevel.isOn()) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 41.14459980167877
+}

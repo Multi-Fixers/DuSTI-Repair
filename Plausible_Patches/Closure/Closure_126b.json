@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/com/google/javascript/jscomp/MinimizeExitPoints.java", "buggy_line numbers": [141, 142, 143, 144], "fix_type": "delete", "fix": [""], "developer_fix": []}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 275.22455763816833}

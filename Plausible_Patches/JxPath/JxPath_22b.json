@@ -1,0 +1,20 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java",
+            "buggy_line numbers": [
+                689
+            ],
+            "fix_type": "replace",
+            "fix": [
+                ""
+            ],
+            "developer_fix": [
+                "uri = attr.getValue();",
+                "break;"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/3. ",
+    "time_cost": 34.238818645477295
+}

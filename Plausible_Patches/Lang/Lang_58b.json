@@ -1,0 +1,20 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/lang/math/NumberUtils.java",
+            "buggy_line numbers": [
+                454,
+                455
+            ],
+            "fix_type": "replace",
+            "fix": [
+                ") {"
+            ],
+            "developer_fix": [
+                "&& (numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric))) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 78.71293950080872
+}

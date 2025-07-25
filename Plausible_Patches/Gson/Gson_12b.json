@@ -1,0 +1,58 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/com/google/gson/internal/bind/JsonTreeReader.java",
+            "buggy_line numbers": [
+                262
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (stackSize > 0) {"
+            ],
+            "developer_fix": [
+                "if (stackSize > 0) {"
+            ]
+        },
+        {
+            "file_path": "src/main/java/com/google/gson/internal/bind/JsonTreeReader.java",
+            "buggy_line numbers": [
+                263
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "}"
+            ],
+            "developer_fix": [
+                "}"
+            ]
+        },
+        {
+            "file_path": "src/main/java/com/google/gson/internal/bind/JsonTreeReader.java",
+            "buggy_line numbers": [
+                264
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (stackSize > 0) {"
+            ],
+            "developer_fix": [
+                "if (stackSize > 0) {"
+            ]
+        },
+        {
+            "file_path": "src/main/java/com/google/gson/internal/bind/JsonTreeReader.java",
+            "buggy_line numbers": [
+                265
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "}"
+            ],
+            "developer_fix": [
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. Iteration 1 reduced failing tests with loc 3. Iteration 1 reduced failing tests with loc 4. ",
+    "time_cost": 1064.198341105687
+}

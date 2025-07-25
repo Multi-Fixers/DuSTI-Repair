@@ -1,0 +1,20 @@
+{
+    "patch": [
+        {
+            "file_path": "/src/main/java/org/joda/time/format/DateTimeFormatter.java",
+            "buggy_line numbers": [
+                709
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "int year = chrono.year().get(instantLocal);",
+                "someMethod(instantLocal, chrono, iLocale, iPivotYear, year);"
+            ],
+            "developer_fix": [
+                "instantLocal, chrono, iLocale, iPivotYear, chrono.year().get(instantLocal));"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 73.298451134433
+}

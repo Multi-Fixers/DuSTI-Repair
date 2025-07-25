@@ -1,0 +1,25 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/collections/keyvalue/MultiKey.java",
+            "buggy_line numbers": [
+                275
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "private Object readResolve() {",
+                "this.calculateHashCode(this.keys)",
+                "return this;",
+                "}"
+            ],
+            "developer_fix": [
+                "private Object readResolve() {",
+                "calculateHashCode(keys);",
+                "return this;",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 56.34423688907675
+}

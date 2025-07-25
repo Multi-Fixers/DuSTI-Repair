@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/apache/commons/math3/stat/inference/MannWhitneyUTest.java", "buggy_line numbers": [173], "fix_type": "replace", "fix": ["final long n1n2prod = (long)n1 * n2;"], "developer_fix": ["final double n1n2prod = n1 * n2;"]}], "iter_path": "Iteration 1 with loc 1/1. Iteration 2 with loc 1/1. ", "time_cost": 548.8828463554382}

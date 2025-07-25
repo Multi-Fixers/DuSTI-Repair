@@ -1,0 +1,40 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/lang/text/StrBuilder.java",
+            "buggy_line numbers": [
+                1186
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (str == null) {",
+                "str = \"\";",
+                "}"
+            ],
+            "developer_fix": [
+                "if (str == null) {",
+                "str = \"\";",
+                "}"
+            ]
+        },
+        {
+            "file_path": "src/java/org/apache/commons/lang/text/StrBuilder.java",
+            "buggy_line numbers": [
+                1230
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (str == null) {",
+                "str = \"\";",
+                "}"
+            ],
+            "developer_fix": [
+                "if (str == null) {",
+                "str = \"\";",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 83.854342456787
+}

@@ -1,0 +1,29 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/MaybeReachingVariableUse.java",
+            "buggy_line numbers": [
+                160
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "List<DiGraphEdge<Node, Branch>> branchEdges = getCfg().getOutEdges(cfgNode);",
+                "for (DiGraphEdge<Node, Branch> edge : branchEdges) {",
+                "if (edge.getValue() == Branch.ON_EX) {",
+                "return true;",
+                "}",
+                "}"
+            ],
+            "developer_fix": [
+                "List<DiGraphEdge<Node, Branch>> branchEdges = getCfg().getOutEdges(cfgNode);",
+                "for (DiGraphEdge<Node, Branch> edge : branchEdges) {",
+                "if (edge.getValue() == Branch.ON_EX) {",
+                "return true;",
+                "}",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 227.1300482749939
+}

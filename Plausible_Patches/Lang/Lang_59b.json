@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/lang/text/StrBuilder.java",
+            "buggy_line numbers": [
+                884
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "str.getChars(0, width, buffer, size);"
+            ],
+            "developer_fix": [
+                "str.getChars(0, width, buffer, size);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 47.234567293994
+}

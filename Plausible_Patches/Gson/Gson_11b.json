@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/com/google/gson/internal/bind/TypeAdapters.java",
+            "buggy_line numbers": [
+                371
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "case STRING:"
+            ],
+            "developer_fix": [
+                "case STRING:"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 32.824886790018
+}

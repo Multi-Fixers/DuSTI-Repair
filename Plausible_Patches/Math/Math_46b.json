@@ -1,0 +1,32 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/math/complex/Complex.java",
+            "buggy_line numbers": [
+                260
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return NaN;"
+            ],
+            "developer_fix": [
+                "return NaN;"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/apache/commons/math/complex/Complex.java",
+            "buggy_line numbers": [
+                297
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return NaN;"
+            ],
+            "developer_fix": [
+                "return NaN;"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 57.834985562190
+}

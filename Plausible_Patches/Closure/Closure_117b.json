@@ -1,0 +1,57 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/TypeValidator.java",
+            "buggy_line numbers": [
+                727
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "JSType type = getJSType(n);",
+                "if (dereference) {",
+                "ObjectType dereferenced = type.dereference();",
+                "if (dereferenced != null) {",
+                "type = dereferenced;",
+                "}",
+                "}",
+                "",
+                "if (type.isFunctionPrototypeType() ||",
+                "(type.toObjectType() != null &&",
+                "type.toObjectType().getConstructor() != null)) {",
+                "return type.toString();",
+                "}"
+            ],
+            "developer_fix": [
+                "if (type.isFunctionPrototypeType() ||",
+                "(type.toObjectType() != null &&",
+                "type.toObjectType().getConstructor() != null)) {",
+                "return type.toString();",
+                "}"
+            ]
+        },
+        {
+            "file_path": "src/com/google/javascript/jscomp/TypeValidator.java",
+            "buggy_line numbers": [
+                756,
+                757,
+                758,
+                759,
+                760,
+                761,
+                762,
+                763,
+                764,
+                765,
+                766,
+                767
+            ],
+            "fix_type": "delete",
+            "fix": [
+                ""
+            ],
+            "developer_fix": []
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 3/3. Iteration 2 with loc 2/3. Iteration 3 with loc 3/3. ",
+    "time_cost": 8799.439238548279
+}

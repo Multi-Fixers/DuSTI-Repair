@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/com/fasterxml/jackson/databind/deser/std/StringArrayDeserializer.java", "buggy_line numbers": [66], "fix_type": "replace", "fix": ["value = null;"], "developer_fix": ["value = null; // since we have established that '_elementDeserializer == null' earlier"]}], "iter_path": "Iteration 1 with loc 1/2. ", "time_cost": 143.91271901130676}

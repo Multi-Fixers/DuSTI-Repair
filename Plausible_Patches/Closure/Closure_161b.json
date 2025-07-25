@@ -1,0 +1,23 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/PeepholeFoldConstants.java",
+            "buggy_line numbers": [
+                1283
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (isAssignmentTarget(n)) {",
+                "return n;",
+                "}"
+            ],
+            "developer_fix": [
+                "if (isAssignmentTarget(n)) {",
+                "return n;",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 275.7057957649231
+}

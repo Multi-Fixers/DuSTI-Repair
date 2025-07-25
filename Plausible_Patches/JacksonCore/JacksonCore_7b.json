@@ -1,0 +1,26 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java",
+            "buggy_line numbers": [
+                169
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (isNameMissing()) {",
+                "return STATUS_EXPECT_NAME;",
+                "}",
+                "private boolean isNameMissing() {",
+                "return !_gotName;",
+                "}"
+            ],
+            "developer_fix": [
+                "if (!_gotName) {",
+                "return STATUS_EXPECT_NAME;",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 68.902783321943
+}

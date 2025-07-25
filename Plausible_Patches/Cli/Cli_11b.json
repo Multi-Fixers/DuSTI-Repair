@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/cli/HelpFormatter.java",
+            "buggy_line numbers": [
+                632
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (Boolean.TRUE.equals(option.hasArg()) && Boolean.TRUE.equals(option.hasArgName())) {"
+            ],
+            "developer_fix": [
+                "if (option.hasArg() && option.hasArgName())"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 49.34952178905356
+}

@@ -1,0 +1,38 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java",
+            "buggy_line numbers": [
+                204
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "QName rootName = _rootNameFromConfig();",
+                "if (rootName == null) {",
+                "rootName = ROOT_NAME_FOR_NULL;",
+                "}"
+            ],
+            "developer_fix": [
+                "QName rootName = _rootNameFromConfig();",
+                "if (rootName == null) {",
+                "rootName = ROOT_NAME_FOR_NULL;",
+                "}"
+            ]
+        },
+        {
+            "file_path": "src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java",
+            "buggy_line numbers": [
+                205
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "_initWithRootName((ToXmlGenerator) jgen, rootName);"
+            ],
+            "developer_fix": [
+                "_initWithRootName((ToXmlGenerator) jgen, rootName);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 87.612778945546
+}

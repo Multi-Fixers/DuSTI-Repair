@@ -1,0 +1,25 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java",
+            "buggy_line numbers": [
+                245
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "} else {",
+                "if (end <= start) {",
+                "throw new IllegalArgumentException(String.format(\"Parameter end (%d) must be greater than start (%d)\", end, start));",
+                "}"
+            ],
+            "developer_fix": [
+                "} else {",
+                "if (end <= start) {",
+                "throw new IllegalArgumentException(\"Parameter end (\" + end + \") must be greater than start (\" + start + \")\");",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 73.789453121084
+}

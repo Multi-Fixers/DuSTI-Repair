@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/java/org/apache/commons/lang/WordUtils.java", "buggy_line numbers": [616], "fix_type": "insert", "fix": ["if (lower >= str.length()) {", "return str;", "}"], "developer_fix": ["if (lower > str.length()) {", "lower = str.length();", "}"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 88.05021595954895}

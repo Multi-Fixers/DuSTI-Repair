@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "source/org/jfree/data/time/TimeSeries.java",
+            "buggy_line numbers": [
+                944
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (endIndex < startIndex) {"
+            ],
+            "developer_fix": [
+                "if ((endIndex < 0)  || (endIndex < startIndex)) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 39.03651666641235
+}

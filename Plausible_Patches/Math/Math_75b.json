@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/apache/commons/math/stat/Frequency.java", "buggy_line numbers": [303], "fix_type": "replace", "fix": ["return getPct((Comparable<?>) v);"], "developer_fix": ["return getPct((Comparable<?>) v);"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 47.703328132629395}

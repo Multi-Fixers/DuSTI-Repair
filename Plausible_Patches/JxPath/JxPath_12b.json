@@ -1,0 +1,21 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java",
+            "buggy_line numbers": [
+                42
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return equalStrings(namespaceURI, nodeNS) ||",
+                "(nodeNS == null && equalStrings(testPrefix, getPrefix(node)));"
+            ],
+            "developer_fix": [
+                "return equalStrings(namespaceURI, nodeNS) || nodeNS == null",
+                "&& equalStrings(testPrefix, getPrefix(node));"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 59.5697222330431
+}

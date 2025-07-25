@@ -1,0 +1,23 @@
+{
+    "patch": [
+        {
+            "file_path": "src/com/google/javascript/jscomp/DisambiguateProperties.java",
+            "buggy_line numbers": [
+                495
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (child.isQuotedString()) {",
+                "continue;",
+                "}"
+            ],
+            "developer_fix": [
+                "if (child.isQuotedString()) {",
+                "continue;",
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 53.754859951048
+}

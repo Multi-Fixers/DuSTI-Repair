@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/codec/binary/Base64.java",
+            "buggy_line numbers": [
+                670
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "return StringUtils.newStringUtf8(encodeBase64(binaryData, false));"
+            ],
+            "developer_fix": [
+                "return StringUtils.newStringUtf8(encodeBase64(binaryData, false));"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 53.59158947687233
+}

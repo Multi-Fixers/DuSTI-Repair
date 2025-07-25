@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/java/org/apache/commons/math/stat/Frequency.java", "buggy_line numbers": [121], "fix_type": "insert", "fix": ["addValue((Comparable<?>) v);", "}", "", "public void addValue(Comparable<?> v) {"], "developer_fix": ["public void addValue(Comparable<?>v){"]}], "iter_path": "Iteration 1 with loc 2/2. ", "time_cost": 174.05889081954956}

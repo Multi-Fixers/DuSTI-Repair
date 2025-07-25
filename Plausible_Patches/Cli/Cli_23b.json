@@ -1,0 +1,43 @@
+{
+    "patch": [
+        {
+            "file_path": "src/java/org/apache/commons/cli/HelpFormatter.java",
+            "buggy_line numbers": [
+                824
+            ],
+            "fix_type": "delete",
+            "fix": [
+                ""
+            ],
+            "developer_fix": []
+        },
+        {
+            "file_path": "src/java/org/apache/commons/cli/HelpFormatter.java",
+            "buggy_line numbers": [
+                833,
+                834,
+                835,
+                836
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "}",
+                "",
+                "if (text.length() > width && pos + 1 == nextLineTabStop) {",
+                "sb.append(text);",
+                "",
+                "return sb;"
+            ],
+            "developer_fix": [
+                "}",
+                "",
+                "if ( (text.length() > width) && (pos == nextLineTabStop - 1) ) {",
+                "sb.append(text);",
+                "",
+                "return sb;"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 81.20033298776554
+}

@@ -1,0 +1,34 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/com/fasterxml/jackson/databind/type/TypeFactory.java",
+            "buggy_line numbers": [
+                895
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "Class<?> rawType = null;",
+                "context = new TypeBindings(this, rawType);"
+            ],
+            "developer_fix": [
+                "context = new TypeBindings(this, (Class<?>) null);"
+            ]
+        },
+        {
+            "file_path": "src/main/java/com/fasterxml/jackson/databind/type/TypeFactory.java",
+            "buggy_line numbers": [
+                902
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "boolean resolveUnknown = false;",
+                "JavaType actualType = context.findType(name, resolveUnknown);"
+            ],
+            "developer_fix": [
+                "JavaType actualType = context.findType(name, false);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 69.452578391244
+}

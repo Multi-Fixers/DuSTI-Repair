@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java", "buggy_line numbers": [72], "fix_type": "replace", "fix": ["return solve(f, min, max);"], "developer_fix": ["return solve(f, min, max);"]}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 83.99071264266968}

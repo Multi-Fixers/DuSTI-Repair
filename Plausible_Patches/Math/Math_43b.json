@@ -1,0 +1,45 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java",
+            "buggy_line numbers": [
+                158
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (meanImpl != mean) {"
+            ],
+            "developer_fix": [
+                "if (meanImpl != mean) {"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java",
+            "buggy_line numbers": [
+                161
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "if (varianceImpl != variance) {"
+            ],
+            "developer_fix": [
+                "if (varianceImpl != variance) {"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java",
+            "buggy_line numbers": [
+                164
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (geoMeanImpl != geoMean) {"
+            ],
+            "developer_fix": [
+                "if (geoMeanImpl != geoMean) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/3. Iteration 2 with loc 2/3. Iteration 3 with loc 3/3. ",
+    "time_cost": 817.45954562333
+}

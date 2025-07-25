@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/jsoup/parser/Parser.java",
+            "buggy_line numbers": [
+                148
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "popStackToClose(tag);"
+            ],
+            "developer_fix": [
+                "popStackToClose(tag);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/1. ",
+    "time_cost": 37.324935810949
+}

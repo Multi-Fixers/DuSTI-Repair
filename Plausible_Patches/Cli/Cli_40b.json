@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+            "buggy_line numbers": [
+                103
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "throw new ParseException(String.format(\"Unable to handle the class: %s\", clazz));"
+            ],
+            "developer_fix": [
+                "throw new ParseException(\"Unable to handle the class: \" + clazz);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 3/3. ",
+    "time_cost": 29.53511232211875
+}

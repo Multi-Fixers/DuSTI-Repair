@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java", "buggy_line numbers": [488], "fix_type": "delete", "fix": ["else {", "formatBigIntegerBinary(value, buf, offset, length, negative);", "}"], "developer_fix": []}], "iter_path": "Iteration 1 with loc 2/2. ", "time_cost": 62.10355520248413}

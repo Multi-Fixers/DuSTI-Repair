@@ -1,0 +1,19 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/csv/CSVRecord.java",
+            "buggy_line numbers": [
+                182
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (col < values.length)"
+            ],
+            "developer_fix": [
+                "if (col < values.length) {"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 with loc 1/2. ",
+    "time_cost": 18.453733444213867
+}

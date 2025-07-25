@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java", "buggy_line numbers": [771], "fix_type": "delete", "fix": [""], "developer_fix": []}], "iter_path": "Iteration 1 with loc 1/2. ", "time_cost": 339.8138515949249}

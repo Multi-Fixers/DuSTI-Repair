@@ -1,0 +1,32 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java",
+            "buggy_line numbers": [
+                240
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "if (signatureLength >= 512) {"
+            ],
+            "developer_fix": [
+                "if (signatureLength >= 512) {"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java",
+            "buggy_line numbers": [
+                250
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "}"
+            ],
+            "developer_fix": [
+                "}"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 70.775829123521
+}

@@ -1,0 +1,1 @@
+{"patch": [{"file_path": "src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java", "buggy_line numbers": [187, 188, 189, 190], "fix_type": "delete", "fix": [""], "developer_fix": []}], "iter_path": "Iteration 1 with loc 1/1. ", "time_cost": 363.29014229774475}

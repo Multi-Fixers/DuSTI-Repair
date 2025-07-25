@@ -1,0 +1,48 @@
+{
+    "patch": [
+        {
+            "file_path": "src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java",
+            "buggy_line numbers": [
+                235
+            ],
+            "fix_type": "insert",
+            "fix": [
+                "int p = agingA - MAXIMAL_AGING;",
+                "double weightA = Math.pow(2, p) - 1",
+                "double weightB = p + 1;",
+                "double numerator = weightA * yA - weightB * REDUCTION_FACTOR * yB;",
+                "double denominator = weightA + weightB;",
+                "targetY = numerator / denominator;"
+            ],
+            "developer_fix": [
+                "final int p = agingA - MAXIMAL_AGING;",
+                "final double weightA = (1 << p) - 1;",
+                "final double weightB = p + 1;",
+                "targetY = (weightA * yA - weightB * REDUCTION_FACTOR * yB) / (weightA + weightB);"
+            ]
+        },
+        {
+            "file_path": "src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java",
+            "buggy_line numbers": [
+                238
+            ],
+            "fix_type": "replace",
+            "fix": [
+                "int p = agingA - MAXIMAL_AGING;",
+                "double weightA = p + 1;",
+                "double weightB = Math.pow(2, p) - 1;",
+                "double numerator = weightB * yB - weightA * REDUCTION_FACTOR * yA",
+                "double denominator = weightA + weightB",
+                "targetY = numerator / denominator;"
+            ],
+            "developer_fix": [
+                "final int p = agingB - MAXIMAL_AGING;",
+                "final double weightA = p + 1;",
+                "final double weightB = (1 << p) - 1;",
+                "targetY = (weightB * yB - weightA * REDUCTION_FACTOR * yA) / (weightA + weightB);"
+            ]
+        }
+    ],
+    "iter_path": "Iteration 1 reduced failing tests with loc 1. Iteration 1 reduced failing tests with loc 2. ",
+    "time_cost": 157.23526533443433
+}
